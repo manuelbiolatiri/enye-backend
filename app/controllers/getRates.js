@@ -8,7 +8,7 @@ const getRates = {
 
             // get rates query 
             const get = await xchangeService.fetchRates({base, currency});
-            console.log("log rates fetched...", get.status);
+            // console.log("log rates fetched...", get.status);
             console.log("log rates fetched...", get);
             // get response
             if (get.status !== 200){
