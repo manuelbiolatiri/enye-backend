@@ -1,7 +1,7 @@
 "use strict";
 
 const _axios = require("axios").create({
-    baseURL: process.env.EXCHANGE_SERVICE_URL
+    baseURL: "https://api.exchangeratesapi.io" || process.env.EXCHANGE_SERVICE_URL
 });
 
 exports.fetchRates =  async (options) => {
